@@ -13,7 +13,7 @@ struct GradientView: View {
     let blue: Double
     
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [currentColor, .init(white: 0.2)]), startPoint: .top, endPoint: .bottom)
+        LinearGradient(gradient: Gradient(colors: [currentColor, .black]), startPoint: .top, endPoint: .bottom)
     }
     
     private var currentColor: Color {
@@ -23,6 +23,6 @@ struct GradientView: View {
 
 struct GradientView_Previews: PreviewProvider {
     static var previews: some View {
-        GradientView(red: 100, green: 55, blue: 139)
+        GradientView(red: 100, green: 0, blue: 0)
     }
 }
