@@ -24,6 +24,7 @@ struct SlidersUI: View {
 struct StackSliders: View {
     @Binding var sliderValue: Double
     @State private var alertPresent = false
+    @State private var textValue = ""
     
     let color: Color
     
@@ -36,27 +37,39 @@ struct StackSliders: View {
             Slider(value: $sliderValue, in: 0...255, step: 1)
                 .accentColor(color)
             
-            TextField("", value: $sliderValue, formatter: NumberFormatter(), onEditingChanged: {text in
-                print(text)
-            }, onCommit: validateValue)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-            .frame(width: 45)
-            .alert(isPresented: $alertPresent) {
-                Alert(title: Text("Invalid value"), message: Text("Please enter value from 0 to 255"))
-            }
+            TextField("", text: $textValue, onCommit: validateValue)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .frame(width: 50)
+                .alert(isPresented: $alertPresent) {
+                    Alert(title: Text("Invalid value"),
+                          message: Text("Please enter value from 0 to 255"),
+                          dismissButton: .destructive(Text("Ok"),
+                                                      action: dismisButton))
+                }
+                .onAppear {
+                    textValue = "\(lround(sliderValue))"
+                }
+                .onChange(of: sliderValue, perform: { value in
+                    textValue = "\(lround(value))"
+                })
         }
+    }
+    
+    private func dismisButton() {
+        textValue = "\(lround(sliderValue))"
     }
     private func validateValue() {
         
-        if !(0...255).contains(sliderValue) {
-            sliderValue = 150
+        if let doubleValue = Double(textValue), (0...255).contains(doubleValue) {
+            sliderValue = doubleValue
+        } else {
             alertPresent.toggle()
         }
     }
 }
 
-struct SlidersUI_Previews: PreviewProvider {
-    static var previews: some View {
-        SlidersUI(redValue: .constant(150), greenValue: .constant(150), blueValue: .constant(150))
-    }
-}
+//struct SlidersUI_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SlidersUI(redValue: .constant(150), greenValue: .constant(150), blueValue: .constant(150), textValue: .constant("55"))
+//    }
+//}

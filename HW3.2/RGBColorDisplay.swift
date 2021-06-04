@@ -14,7 +14,7 @@ struct RGBColorDisplay: View {
     
     var body: some View {
         ZStack {
-            Color(red: 0, green: 100/255, blue: 200/255)
+            GradientView(red: redValue, green: greenValue, blue: blueValue)
                 .ignoresSafeArea()
             VStack(spacing: 20) {
                 ColorView(red: redValue, green: greenValue, blue: blueValue)
@@ -22,7 +22,6 @@ struct RGBColorDisplay: View {
                 Spacer()
             }
             .padding()
-            
         }
     }
 }

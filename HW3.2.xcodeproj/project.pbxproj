@@ -13,6 +13,7 @@
 		0A0302CE2669F58100DCF413 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0302CD2669F58100DCF413 /* Preview Assets.xcassets */; };
 		0A0302D62669F59800DCF413 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0302D52669F59800DCF413 /* ColorView.swift */; };
 		0A0302D82669F83000DCF413 /* SlidersUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0302D72669F83000DCF413 /* SlidersUI.swift */; };
+		0A08CC86266A4B9B00537D41 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A08CC85266A4B9B00537D41 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0A0302CF2669F58100DCF413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A0302D52669F59800DCF413 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		0A0302D72669F83000DCF413 /* SlidersUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersUI.swift; sourceTree = "<group>"; };
+		0A08CC85266A4B9B00537D41 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		0A0302C52669F57E00DCF413 /* HW3.2 */ = {
 			isa = PBXGroup;
 			children = (
+				0A08CC85266A4B9B00537D41 /* GradientView.swift */,
 				0A0302C62669F57E00DCF413 /* HW3_2App.swift */,
 				0A0302C82669F57E00DCF413 /* RGBColorDisplay.swift */,
 				0A0302D72669F83000DCF413 /* SlidersUI.swift */,
@@ -146,6 +149,7 @@
 			files = (
 				0A0302D62669F59800DCF413 /* ColorView.swift in Sources */,
 				0A0302C92669F57E00DCF413 /* RGBColorDisplay.swift in Sources */,
+				0A08CC86266A4B9B00537D41 /* GradientView.swift in Sources */,
 				0A0302D82669F83000DCF413 /* SlidersUI.swift in Sources */,
 				0A0302C72669F57E00DCF413 /* HW3_2App.swift in Sources */,
 			);
