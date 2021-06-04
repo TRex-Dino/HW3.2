@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		0A0302C72669F57E00DCF413 /* HW3_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0302C62669F57E00DCF413 /* HW3_2App.swift */; };
-		0A0302C92669F57E00DCF413 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0302C82669F57E00DCF413 /* ContentView.swift */; };
+		0A0302C92669F57E00DCF413 /* RGBColorDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0302C82669F57E00DCF413 /* RGBColorDisplay.swift */; };
 		0A0302CB2669F58100DCF413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0302CA2669F58100DCF413 /* Assets.xcassets */; };
 		0A0302CE2669F58100DCF413 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0302CD2669F58100DCF413 /* Preview Assets.xcassets */; };
+		0A0302D62669F59800DCF413 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0302D52669F59800DCF413 /* ColorView.swift */; };
+		0A0302D82669F83000DCF413 /* SlidersUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0302D72669F83000DCF413 /* SlidersUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A0302C32669F57E00DCF413 /* HW3.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW3.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A0302C62669F57E00DCF413 /* HW3_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW3_2App.swift; sourceTree = "<group>"; };
-		0A0302C82669F57E00DCF413 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A0302C82669F57E00DCF413 /* RGBColorDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColorDisplay.swift; sourceTree = "<group>"; };
 		0A0302CA2669F58100DCF413 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A0302CD2669F58100DCF413 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A0302CF2669F58100DCF413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0302D52669F59800DCF413 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		0A0302D72669F83000DCF413 /* SlidersUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				0A0302C62669F57E00DCF413 /* HW3_2App.swift */,
-				0A0302C82669F57E00DCF413 /* ContentView.swift */,
+				0A0302C82669F57E00DCF413 /* RGBColorDisplay.swift */,
+				0A0302D72669F83000DCF413 /* SlidersUI.swift */,
+				0A0302D52669F59800DCF413 /* ColorView.swift */,
 				0A0302CA2669F58100DCF413 /* Assets.xcassets */,
 				0A0302CF2669F58100DCF413 /* Info.plist */,
 				0A0302CC2669F58100DCF413 /* Preview Content */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0302C92669F57E00DCF413 /* ContentView.swift in Sources */,
+				0A0302D62669F59800DCF413 /* ColorView.swift in Sources */,
+				0A0302C92669F57E00DCF413 /* RGBColorDisplay.swift in Sources */,
+				0A0302D82669F83000DCF413 /* SlidersUI.swift in Sources */,
 				0A0302C72669F57E00DCF413 /* HW3_2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
